@@ -5,7 +5,7 @@ Depends on:
 *python3*
 *systemd*
 
-Simply drop *hdd_spindown.py* to */usr/local/bin/* and *hdd_spindown.cfg* to */usr/local/etc/* and add the ID if the HDDs to the *.cfg* file. There are two example IDs currently in the file. The id is based on the path to the block device, which should be something like */dev/disk/by-id/ata-[ID]* (Without the square brackets).
+Simply drop *hdd_spindown.py* to */usr/local/bin/* and *hdd_spindown.cfg* to */usr/local/etc/* and add the ID of the HDDs to the *.cfg* file. There are two example IDs currently in the file. The id is based on the path to the block device, which should be something like */dev/disk/by-id/ata-[ID]* (Without the square brackets).
 
 The *hdd_spindown.service* file should live in */etc/systemd/system/*
 Simply run the following commands to add the service once the files are copied:
