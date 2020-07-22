@@ -1,0 +1,12 @@
+[Unit]
+Description=Set spin down times for HDDs
+After=local-fs.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/hdd_spindown.py
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
